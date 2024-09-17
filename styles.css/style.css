@@ -1,3 +1,4 @@
+/*перший текст під картинкою*/
 .image-title {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -8,7 +9,7 @@
     width: 322px;
     height: 36px;
 }
-
+/*другий текст під картинкою*/
 .image-description{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -19,4 +20,10 @@
     width: 322px;
     height: 30px;
     color: #757575;
+}
+/*Параметри картинок*/
+.image-style{
+    width: 370px;
+    height: 294px;
+    object-fit: cover;
 }
