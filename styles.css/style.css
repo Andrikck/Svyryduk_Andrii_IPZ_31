@@ -1,3 +1,13 @@
+/*база*/
+:root{
+    --main-bg-color:#ffffff;
+    --text-color:#212121;
+    --accent-color:#2196f3;
+    --button-bg-color:#f5f4fa;
+    --secondary-text-color:#2196f3;
+    --background-fill-color:#2f303a;
+}
+
 /*перший текст під картинкою*/
 .image-title {
     font-family: 'Roboto', sans-serif;
@@ -27,3 +37,25 @@
     height: 294px;
     object-fit: cover;
 }
+/*кнопки*/
+a:hover,
+a:focus,
+a:active {
+    color: var(--accent-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    line-height: normal;
+    letter-spacing: 0.02em;
+}
+
+button:hover,
+button:focus,
+button:active{
+    background-color: var(--accent-color);
+    color:#ffffff
+}
+
+/**/
