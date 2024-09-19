@@ -7,7 +7,6 @@
     --secondary-text-color:#2196f3;
     --background-fill-color:#2f303a;
 }
-
 /*перший текст під картинкою*/
 .image-title {
     font-family: 'Roboto', sans-serif;
@@ -39,35 +38,36 @@ a:focus,
 a:active {
     color: var(--accent-color);
 }
-
 a{
     text-decoration: none;
     color: var(--text-color);
     line-height: normal;
     letter-spacing: 0.02em;
 }
-
 button:hover,
 button:focus,
 button:active{
     background-color: var(--accent-color);
     color:#ffffff
 }
+/*шапка*/
 .logo {
     font-family: 'Ralewey', sans-serif;
-
+    font-size: 26px;
 }
 header a,
 header nav ul li a {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 /*body*/
 body{
     font-family: 'Roboto', sans-serif;
     color: var (--text-color);
     background-color: var(--main-bg-color);
-
 }
+
+
 /*header*/
 header {
     display: flex;
@@ -76,14 +76,85 @@ header {
 /*section*/
 section.hero {
     background-color: var(--background-fill-color);
+    font-size: 44px ;
+    font-weight: 900px;
+    color: #ffffff;
 }
+
 section.hero h1 {
     font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
 }
+/*головна, селекція 2*/
+section ul li h3{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+section ul li p{
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+/*секція головна 3+4*/
+section h2{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 36px;
+    font-weight: 700px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+section h3{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+section p{
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+
+/*footer*/
 footer {
-    background-color: var(--background-fill-color)
+    background-color: var(--background-fill-color);
+    color: rgba(255, 255, 255, 0.6);
 }
 footer a{
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
-    
+    font-size: 26px;
+    font-weight: 700px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+footer ul li{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+footer ul li a{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
