@@ -9,7 +9,6 @@
 }
 /*перший текст під картинкою*/
 .image-title {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
@@ -18,7 +17,6 @@
 }
 /*другий текст під картинкою*/
 .image-description{
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -26,12 +24,7 @@
     text-align: left;
     color: #757575;
 }
-/*Параметри картинок*/
-.image-style{
-    width: 370px;
-    height: 294px;
-    object-fit: cover;
-}
+
 /*кнопки*/
 a:hover,
 a:focus,
