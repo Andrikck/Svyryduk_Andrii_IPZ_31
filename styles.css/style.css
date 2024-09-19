@@ -50,16 +50,13 @@ button:active{
     background-color: var(--accent-color);
     color:#ffffff
 }
+
 /*шапка*/
 .logo {
     font-family: 'Ralewey', sans-serif;
     font-size: 26px;
 }
-header a,
-header nav ul li a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
+
 /*body*/
 body{
     font-family: 'Roboto', sans-serif;
@@ -67,12 +64,17 @@ body{
     background-color: var(--main-bg-color);
 }
 
-
 /*header*/
+header a,
+header nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 header {
-    display: flex;
+    /*display: flex;*/
     background-color: var(--main-bg-color);
 }
+
 /*section*/
 section.hero {
     background-color: var(--background-fill-color);
@@ -86,6 +88,7 @@ section.hero h1 {
     line-height: 60px;
     letter-spacing: 0.06em;
 }
+
 /*головна, селекція 2*/
 section ul li h3{
     font-family: 'Roboto', sans-serif;
@@ -103,6 +106,7 @@ section ul li p{
     line-height: 24px;
     letter-spacing: 0.03em;
 }
+
 /*секція головна 3+4*/
 section h2{
     font-family: 'Roboto', sans-serif;
