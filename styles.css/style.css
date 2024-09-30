@@ -33,9 +33,11 @@
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    color: var(--main-bg-color);
+    color: var(--text-color);
 }
 
-.sec-button{
+.sec-button button{     
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
