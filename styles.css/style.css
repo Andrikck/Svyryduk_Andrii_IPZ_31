@@ -81,6 +81,17 @@ button:active{
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+.logo::before {
+    content: 'Web';
+    color: var(--accent-color);
+}
+.logo::after {
+    content: 'Studio';
+    color: var(--text-color)
 }
 
 /*body*/
@@ -123,7 +134,7 @@ section ul li h3{
     letter-spacing: 0.03em;
 }
 section ul li p{
-    color: #757575;
+    color: var(--color-gray);
     font-size: 14px;
     font-weight: 400px;
     line-height: 24px;
@@ -177,4 +188,13 @@ footer ul li a{
     font-weight: 400px;
     line-height: 16px;
     letter-spacing: 0.03em;
+}
+
+footer .logo::before {
+    content: 'Web';
+    color:var(--accent-color);
+}
+footer .logo::after {
+    content: 'Studio';
+    color:var(--main-bg-color);
 }
