@@ -25,41 +25,28 @@
 }
 
 /*кнопки*/
-section ul li button{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-}
 
 .hero-button{
     font-family: 'Roboto', sans-serif;
     background-color: var(--accent-color);
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.8;
     letter-spacing: 0.06em;
+}
+
+.sec-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
 
 a:hover,
 a:focus,
 a:active {
     color: var(--accent-color);
-}
-.btn-blue {
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-.btn-black{
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-}
-.btn-gray{
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--color-gray);
 }
 
 a{
@@ -73,6 +60,21 @@ button:focus,
 button:active{
     background-color: var(--accent-color);
     color: var(--main-bg-color)
+}   
+
+.btn-blue {
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.btn-black{
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.btn-gray{
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--color-gray);
 }
 
 /*шапка*/
