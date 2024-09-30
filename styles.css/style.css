@@ -98,16 +98,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var (--text-color);
     background-color: var(--main-bg-color);
-}
-
-/*header*/
-header a,
-header nav ul li a {
-
     font-size: 14px;
-}
-header {
-    background-color: var(--main-bg-color);
 }
 
 /*section*/
@@ -127,38 +118,37 @@ section.hero h1 {
 }
 
 /*головна, селекція 2*/
-section ul li h3{
-    font-size: 14px;
+
+.hightlighted-title {
     font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-}
-section ul li p{
-    color: var(--color-gray);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 }
 
-/*секція головна 3+4*/
-section h2{
+.hightlighted-text{
+    color: var(--color-gray);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+
+.h2-text{
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 }
-section h3{
+.h3-text{
     font-size: 16px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 }
-section p{
+.p-text{
     color: var(--color-gray);
     font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
 }
 
