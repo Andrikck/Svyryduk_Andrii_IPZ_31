@@ -34,7 +34,6 @@
     line-height: 1.8;
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
-    color: var(--text-color);
 }
 
 .sec-button button{     
@@ -162,9 +161,12 @@ footer {
     line-height: 1.1;
 }
 .footer-text-gray{
-    color: var(--main-bg-color);
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.1;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 footer .logo::before {
