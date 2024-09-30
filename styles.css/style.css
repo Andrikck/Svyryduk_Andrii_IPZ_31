@@ -4,8 +4,8 @@
     --text-color:#212121;
     --accent-color:#2196f3;
     --button-bg-color:#f5f4fa;
-    --secondary-text-color:#2196f3;
     --background-fill-color:#2f303a;
+    --color-gray:#757575;
 }
 /*перший текст під картинкою*/
 .image-title {
@@ -22,7 +22,7 @@
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #757575;
+    color: var(--color-gray);
 }
 
 /*кнопки*/
@@ -36,6 +36,7 @@ section ul li button{
 
 .hero-button{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--accent-color);
     font-size: 16px;
     font-weight: 700px;
     line-height: 30px;
@@ -47,6 +48,22 @@ a:focus,
 a:active {
     color: var(--accent-color);
 }
+.btn-blue {
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.btn-black{
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.btn-gray{
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--color-gray);
+}
+
+
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -57,7 +74,7 @@ button:hover,
 button:focus,
 button:active{
     background-color: var(--accent-color);
-    color:#ffffff
+    color: var(--main-bg-color)
 }
 
 /*шапка*/
@@ -89,7 +106,7 @@ section.hero {
     background-color: var(--background-fill-color);
     font-size: 44px ;
     font-weight: 900px;
-    color: #ffffff;
+    color: var(--main-bg-color)
 }
 
 section.hero h1 {
@@ -127,7 +144,7 @@ section h3{
     letter-spacing: 0.03em;
 }
 section p{
-    color: #757575;
+    color: var(--color-gray);
     font-size: 16px;
     font-weight: 400px;
     line-height: 18px;
@@ -141,14 +158,14 @@ footer {
 }
 footer a{
     font-family: 'Raleway', sans-serif;
-    color: #ffffff;
+    color: var(--main-bg-color);
     font-size: 26px;
     font-weight: 700px;
     line-height: 30px;
     letter-spacing: 0.03em;
 }
 footer ul li{
-    color: #ffffff;
+    color: var(--main-bg-color);
     font-size: 14px;
     font-weight: 400px;
     line-height: 16px;
