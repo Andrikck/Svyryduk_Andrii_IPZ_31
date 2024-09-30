@@ -76,7 +76,7 @@ body{
 /*header*/
 header a,
 header nav ul li a {
-    font-family: 'Roboto', sans-serif;
+
     font-size: 14px;
 }
 header {
@@ -148,7 +148,6 @@ footer a{
     letter-spacing: 0.03em;
 }
 footer ul li{
-    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400px;
@@ -156,7 +155,6 @@ footer ul li{
     letter-spacing: 0.03em;
 }
 footer ul li a{
-    font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     font-weight: 400px;
