@@ -88,6 +88,9 @@ button:active{
     span {
         color: var(--accent-color);
     }
+    span2 {
+        color: var(--main-bg-color);
+    }
 }
 
 /*body*/
@@ -165,11 +168,3 @@ footer a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-footer .logo::before {
-    content: 'Web';
-    color:var(--accent-color);
-}
-footer .logo::after {
-    content: 'Studio';
-    color:var(--main-bg-color);
-}
