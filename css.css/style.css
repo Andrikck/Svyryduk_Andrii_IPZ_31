@@ -85,12 +85,22 @@ button:active{
     font-weight: 700;
     color: var(--text-color);
 
+    width: 145px;
+    height: 31px;
+    top: 24px;
+    left: 215px;
+    gap: 0px;
+    opacity: 0px;
+
     span {
         color: var(--accent-color);
     }
     span2 {
         color: var(--main-bg-color);
     }
+    width: 145px;
+
+
 }
 
 /*body*/
@@ -167,4 +177,19 @@ footer {
 footer a {
     color: rgba(255, 255, 255, 0.6);
 }
+/*контейнери*/
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+.header {
+    width: 1600px;
+    height: 80px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
 
+}
