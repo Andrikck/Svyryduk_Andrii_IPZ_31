@@ -85,20 +85,12 @@ button:active{
     font-weight: 700;
     color: var(--text-color);
 
-    width: 145px;
-    height: 31px;
-    top: 24px;
-    left: 215px;
-    gap: 0px;
-    opacity: 0px;
-
     span {
         color: var(--accent-color);
     }
     span2 {
         color: var(--main-bg-color);
     }
-    width: 145px;
 
 
 }
@@ -184,12 +176,29 @@ footer a {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+
 .header {
     width: 1600px;
     height: 80px;
+    position: relative;
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+}
 
+/*індекс, секція 1*/
+.hero{
+    padding: 60px 0;
+    text-align: center;
+}
+.hero-button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
 }
