@@ -103,6 +103,7 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
     font-weight: 400;
+    margin: 0;
 }
 
 /*section*/
@@ -176,19 +177,22 @@ footer a {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-
 .header {
     width: 1600px;
     height: 80px;
-    position: relative;
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+}
+.nav-menu a{
+    margin-left: 20px;
+    font-size: 16px;
 }
 
 /*індекс, секція 1*/
