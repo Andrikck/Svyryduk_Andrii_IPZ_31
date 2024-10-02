@@ -220,7 +220,7 @@ nav {
     list-style: none; 
     padding: 0;
     margin-right: auto;
-    gap: 15px; 
+    gap: 40px; 
 }
 .contact-info ul li p {
 	margin: 0;
@@ -230,6 +230,7 @@ nav {
 /*індекс, секція 1*/
 .hero{
     padding: 60px 0;
+    gap: 60;
     text-align: center;
 }
 .hero-button {
