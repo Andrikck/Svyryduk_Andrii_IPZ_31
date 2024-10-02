@@ -228,14 +228,31 @@ nav {
 
 
 /*індекс, секція 1*/
-.hero{
-    padding: 60px 0;
-    gap: 60;
-    text-align: center;
+.hero {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-fill-color); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 200px 0 280px 0;
 }
+
+.hero h1 {
+    max-width: 696px;
+    color: var(--main-bg-color); 
+    margin-bottom: 30px; 
+    padding: 0 20px; 
+}
+
 .hero-button {
     border: none;
-    padding: 15px 30px;
+    border-radius: 4px; 
+    color: var(--main-bg-color);
     font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
+    margin-top: 30px;
 }
