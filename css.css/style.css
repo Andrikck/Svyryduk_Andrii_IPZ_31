@@ -225,6 +225,12 @@ nav {
 .contact-info ul li p {
 	margin: 0;
 }
+/*глобальне скидання стилів*/
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 
 /*індекс, секція 1*/
@@ -255,4 +261,5 @@ nav {
     font-weight: 700;
     cursor: pointer;
     margin-top: 30px;
+    padding: 15px 30px;
 }
