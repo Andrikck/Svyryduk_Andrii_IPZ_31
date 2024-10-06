@@ -96,6 +96,8 @@ button:active{
     letter-spacing: 0.03em;
     font-weight: 700;
     color: var(--text-color);
+    margin-bottom: 28px;
+    display: block;
 
     span {
         color: var(--accent-color);
@@ -175,10 +177,12 @@ footer {
 .footer-city{
     color: var(--main-bg-color);
     line-height: 1.1;
+    margin-bottom: 12px;
 }
 .footer-text-gray{
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.1;
+    margin-bottom: 12px;
 }
 
 footer a {
@@ -212,7 +216,7 @@ nav {
 	display: flex;
     margin-left: 96px ;
 }
-
+/*header*/
 .contact-info {
 	display: flex;
 	align-items: flex-end;
@@ -228,6 +232,7 @@ nav {
 .contact-info ul li p {
 	margin: 0;
 }
+
 /*глобальне скидання стилів*/
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -304,7 +309,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .section-ind-four{
     height: 648px;
     margin-top: 94px;
-    margin-bottom: 94px;
     padding-top: 94px;
     background-color: var(--button-bg-color);
     text-align: center;
@@ -324,4 +328,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin-bottom: 30px;
 }
 /*footer*/
-
+.footer-des{
+    height: 251px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
