@@ -13,6 +13,7 @@
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     color: var(--text-color);
 }
 /*другий текст під картинкою*/
@@ -21,6 +22,7 @@
     font-weight: 400;
     line-height: 1.8;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
     color: var(--color-gray);
 }
 
@@ -43,6 +45,9 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    border: none;
+    height: 38px;
+    border-radius: 4px;
 }
 
 a:hover,
@@ -329,7 +334,51 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 /*footer*/
 .footer-des{
-    height: 251px;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+/*portfolio*/
+.section-port-first{
+    height: 1360px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+.ul-button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+/* Стилі для списку з картинками */
+.section-port-first ul:not(.ul-button) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+.section-port-first ul:not(.ul-button) li {
+    width: calc(33.3333% - 30px); 
+    margin-bottom: 30px; 
+}
+.section-port-first ul:not(.ul-button) img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.image-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+.image-title, .image-description {
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+    margin-left: 24px; /* Відступ зліва */
 }
