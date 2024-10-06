@@ -156,12 +156,14 @@ section.hero h1 {
 .h3-text{
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.17;
+    margin-bottom: 10px;
 }
 .p-text{
     color: var(--color-gray);
     font-size: 16px;
     line-height: 1.1;
+    margin-bottom: 30px;
 }
 
 /*footer*/
@@ -296,7 +298,30 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .image-list {
     display: flex;
     justify-content: center;
-    justify-content: center;
     gap: 30px;
 }
+/*секція 4 index*/
+.section-ind-four{
+    height: 648px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    padding-top: 94px;
+    background-color: var(--button-bg-color);
+    text-align: center;
+}
+.section-ind-four ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 0;
+}
+.section-ind-four li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg-color);
+}
+.section-ind-four img{
+    margin-bottom: 30px;
+}
+/*footer*/
 
