@@ -348,7 +348,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: flex;
     justify-content: center;
     gap: 8px;
-    list-style: none;
     padding: 0;
     margin-bottom: 50px;
 }
@@ -358,27 +357,24 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
-    list-style: none;
+    padding: 0px;
+
 }
 .section-port-first ul:not(.ul-button) li {
     width: calc(33.3333% - 30px); 
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 .section-port-first ul:not(.ul-button) img {
     width: 100%;
+    display: block;
     height: auto;
-    margin-bottom: 20px;
-}
-.image-title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-    color: var(--text-color);
 }
 .image-title, .image-description {
-    text-align: left; /* Вирівнюємо текст по лівому краю */
-    margin-left: 24px; /* Відступ зліва */
+    text-align: left; 
+    margin-left: 24px;
+    margin-top: 20px;
+}
+.text-container {
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
