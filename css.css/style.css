@@ -49,8 +49,8 @@
     letter-spacing: 0.03em;
     color: var(--text-color);
     border: none;
-    height: 38px;
     border-radius: 4px;
+    padding: 6px 22px;
 }
 
 a:hover,
