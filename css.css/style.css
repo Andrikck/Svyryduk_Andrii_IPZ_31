@@ -248,12 +248,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /*індекс, секція 1*/
 .hero {
     background-color: var(--background-fill-color); 
+    background-image: url('../images/Img_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center; 
-    padding: 200px 0 200px 0;
+    padding: 200px 0;
+}
+@media (min-width: 1600px) {
+    .hero {
+        background-size: 1600px auto;
+    }
 }
 
 .hero h1 {
