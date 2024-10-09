@@ -106,14 +106,16 @@ button:active{
     color: var(--text-color);
     margin-bottom: 28px;
     display: block;
-
-    span {
-        color: var(--accent-color);
-    }
-    span2 {
-        color: var(--main-bg-color);
-    }
 }
+
+.logo-footer .logo-web {
+    color: var(--accent-color);
+}
+
+.logo-footer .logo-studio {
+    color: var(--main-bg-color);
+}
+
 
 
 /*body*/
