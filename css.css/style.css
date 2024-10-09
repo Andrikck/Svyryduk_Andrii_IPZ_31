@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /*секція 2 index*/
 .section-ind-first{
-    padding: 94px;
+    padding: 94px 0;
 }
 .section-ind-first li:last-child {
     margin-right: 0;
@@ -289,6 +289,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+}
+.icon-wrapper {
+    background-color: var(--button-bg-color);
+    padding: 25px 100px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
 }
 
 /*секція 3 index*/
@@ -322,7 +333,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .text-img-cont{
     padding: 30px;
 }
+.icon-soc{
+    width: 44px;
+    height: 44px;
+}
 
+.icon-soc-img{
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 16px;
+}
 /*footer*/
 .footer-des{
     padding-top: 60px;
