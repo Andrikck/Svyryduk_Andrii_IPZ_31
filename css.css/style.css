@@ -106,14 +106,16 @@ button:active{
     color: var(--text-color);
     margin-bottom: 28px;
     display: block;
-
-    span {
-        color: var(--accent-color);
-    }
-    span2 {
-        color: var(--main-bg-color);
-    }
 }
+
+.logo-footer .logo-web {
+    color: var(--accent-color);
+}
+
+.logo-footer .logo-studio {
+    color: var(--main-bg-color);
+}
+
 
 
 /*body*/
@@ -246,12 +248,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /*індекс, секція 1*/
 .hero {
     background-color: var(--background-fill-color); 
+    background-image: url('../images/Img_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center; 
-    padding: 200px 0 200px 0;
+    padding: 200px 0;
+}
+@media (min-width: 1600px) {
+    .hero {
+        background-size: 1600px auto;
+    }
 }
 
 .hero h1 {
@@ -262,7 +273,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /*секція 2 index*/
 .section-ind-first{
-    padding: 94px;
+    padding: 94px 0;
 }
 .section-ind-first li:last-child {
     margin-right: 0;
@@ -278,6 +289,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+}
+.icon-wrapper {
+    background-color: var(--button-bg-color);
+    padding: 25px 100px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
 }
 
 /*секція 3 index*/
@@ -311,7 +333,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .text-img-cont{
     padding: 30px;
 }
+.icon-soc{
+    width: 44px;
+    height: 44px;
+}
 
+.icon-soc-img{
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 16px;
+}
 /*footer*/
 .footer-des{
     padding-top: 60px;
