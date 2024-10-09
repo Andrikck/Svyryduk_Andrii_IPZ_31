@@ -262,9 +262,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /*секція 2 index*/
 .section-ind-first{
-    width: 1170px;
-    margin: 94px auto; 
-    padding: 94 215px;
+    padding: 94px;
 }
 .section-ind-first li:last-child {
     margin-right: 0;
@@ -309,11 +307,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     max-width: 270px;
     background-color: var(--main-bg-color);
 }
-.section-ind-four img{
-    margin-bottom: 10px;
-}
+
 .text-img-cont{
-    padding: 20px 24px;
+    padding: 30px;
 }
 
 /*footer*/
@@ -326,7 +322,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 /*portfolio*/
 .section-port-first{
-    height: 1360px;
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
