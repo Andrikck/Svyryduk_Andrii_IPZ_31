@@ -228,6 +228,33 @@ nav {
 	margin: 0;
 }
 
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info svg {
+    display: block;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    fill: none;
+}
+.icon-mail {
+    width: 16px;
+    height: 12px; 
+    fill: none;
+    stroke: var(--color-gray);
+}
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /*глобальне скидання стилів*/
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
