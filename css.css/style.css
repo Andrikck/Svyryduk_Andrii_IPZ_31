@@ -356,12 +356,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 44px;
     border-radius: 50%;
     background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s ease;
+}
+
+.icon-soc svg {
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    max-height: 100%;
     fill: #2196F3;
-    transition: background-color 0.3s ease, fill 0.3s ease;
+    transition: fill 0.3s ease;
 }
 
 .icon-soc:hover {
     background-color: var(--accent-color);
+}
+.icon-soc:hover svg {
     fill: var(--main-bg-color);
 }
 
