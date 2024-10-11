@@ -241,14 +241,25 @@ nav {
 .icon-phone {
     width: 10px;
     height: 16px;
-    fill: none;
+    stroke-width: 3px;
+    transition: stroke 0.3s ease;
 }
 .icon-mail {
     width: 16px;
     height: 12px; 
-    fill: none;
-    stroke: var(--color-gray);
+    stroke-width: 3px;
+    transition: stroke 0.3s ease;
 }
+
+
+.btn-gray:hover .icon-phone {
+    stroke: #2196F3;
+}
+
+.btn-gray:hover .icon-mail {
+    stroke: #2196F3;
+}
+
 .contact-info a {
     display: flex;
     align-items: center;
@@ -365,9 +376,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .icon-soc svg {
     width: 20px;
     height: 20px;
-    max-width: 100%;
-    max-height: 100%;
-    fill: #2196F3;
+    fill: #AFB1B8 !important;
     transition: fill 0.3s ease;
 }
 
@@ -375,7 +384,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--accent-color);
 }
 .icon-soc:hover svg {
-    fill: var(--main-bg-color);
+    fill: #FFFFFF !important;
 }
 
 .icon-soc-img{
@@ -470,27 +479,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.3s ease;
 }
+
 .social-icons li:hover {
     background-color: var(--accent-color);
 }
 
-.social-icons li a svg {
-    width: 100%;
-    height: 100%;
-    fill: #2196F3; /* Синя іконка у звичайному стані */
-    transition: fill 0.3s ease; /* Плавний перехід для кольору іконки */
-}
-
-.social-icons li:hover a svg {
-    fill: #FFFFFF; /* Біла іконка при наведенні */
-}
 .social-icons svg {
-    width: 100%;
-    height: 100%;
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease;
 }
-
 
 /*portfolio*/
 .section-port-first{
