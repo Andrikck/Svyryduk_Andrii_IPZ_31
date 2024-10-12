@@ -86,11 +86,6 @@ button:active{
     letter-spacing: 0.02em;
     color: var(--color-gray);
 }
-/*
-        ТІНІ
-*/
-
-
 
 /*шапка*/
 .logo {
@@ -207,6 +202,7 @@ footer a {
 	height: 80px;
 	display: flex;
 	align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-navigation__links {
