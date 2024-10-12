@@ -51,6 +51,8 @@
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 a:hover,
@@ -69,7 +71,8 @@ button:hover,
 button:focus,
 button:active{
     background-color: var(--accent-color);
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }   
 
 .btn-black{
@@ -83,6 +86,11 @@ button:active{
     letter-spacing: 0.02em;
     color: var(--color-gray);
 }
+/*
+        ТІНІ
+*/
+
+
 
 /*шапка*/
 .logo {
@@ -275,7 +283,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /*індекс, секція 1*/
 .hero {
     background-color: var(--background-fill-color); 
-    background-image: url('../images/Img_hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Img_hero.jpg');   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -391,6 +399,22 @@ h1, h2, h3, h4, h5, h6, p, ul {
     gap: 10px;
     margin-top: 16px;
 }
+/*
+        ТІНІ
+*/
+
+.section-ind-four li {
+    max-width: 270px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.section-ind-four li:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
 
 /*секція постійні клієети (5)*/
 .clients-section {
@@ -487,7 +511,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--accent-color);
 }
 
-.social-icons li:hover svg {
+.social-icons li svg {
     color: #FFFFFF;
 }
 
@@ -534,4 +558,23 @@ h1, h2, h3, h4, h5, h6, p, ul {
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+}
+
+.section-port-first ul:not(.ul-button) li {
+    width: calc(33.3333% - 30px); 
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease; 
+}
+
+.section-port-first ul:not(.ul-button) li:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.section-port-first ul:not(.ul-button) img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
