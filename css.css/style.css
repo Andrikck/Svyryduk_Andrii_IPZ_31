@@ -241,23 +241,21 @@ nav {
 .icon-phone {
     width: 10px;
     height: 16px;
-    stroke-width: 3px;
     transition: stroke 0.3s ease;
 }
 .icon-mail {
     width: 16px;
     height: 12px; 
-    stroke-width: 3px;
     transition: stroke 0.3s ease;
 }
 
 
 .btn-gray:hover .icon-phone {
-    stroke: #2196F3;
+    fill: #2196F3;
 }
 
 .btn-gray:hover .icon-mail {
-    stroke: #2196F3;
+    fill: #2196F3;
 }
 
 .contact-info a {
@@ -365,18 +363,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .icon-soc {
     width: 44px;
     height: 44px;
+    color: #AFB1B8;
     border-radius: 50%;
     background-color: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center; 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, fill 0.3s ease;
 }
 
 .icon-soc svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8 !important;
     transition: fill 0.3s ease;
 }
 
@@ -384,7 +382,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: var(--accent-color);
 }
 .icon-soc:hover svg {
-    fill: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 .icon-soc-img{
@@ -487,6 +485,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .social-icons li:hover {
     background-color: var(--accent-color);
+}
+
+.social-icons li:hover svg {
+    color: #FFFFFF;
 }
 
 .social-icons svg {
