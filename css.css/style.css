@@ -51,8 +51,9 @@
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+
 }
 
 a:hover,
@@ -369,11 +370,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
     height: 44px;
     color: #AFB1B8;
     border-radius: 50%;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color); 
     display: flex;
     align-items: center;
     justify-content: center; 
     transition: background-color 0.3s ease, fill 0.3s ease;
+    text-decoration: none;
+    box-sizing: border-box; 
 }
 
 .icon-soc svg {
@@ -394,7 +397,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     justify-content: center; 
     gap: 10px;
     margin-top: 16px;
+    padding: 0;
 }
+
 /*
         ТІНІ
 */
@@ -407,9 +412,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     transition: box-shadow 0.3s ease;
 }
 
-.section-ind-four li:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
-}
 
 
 /*секція постійні клієети (5)*/
@@ -571,8 +573,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .section-port-first ul:not(.ul-button) li {
     width: calc(33.3333% - 30px); 
     background-color: var(--main-bg-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 1px;
     transition: box-shadow 0.3s ease; 
 }
 
