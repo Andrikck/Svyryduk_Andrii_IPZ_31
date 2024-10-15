@@ -345,25 +345,36 @@ h1, h2, h3, h4, h5, h6, p, ul {
     gap: 30px;
 }
 /*секція 4 index*/
-.section-ind-four{
+
+.section-ind-four {
     padding: 94px 0;
     background-color: var(--button-bg-color);
     text-align: center;
+
 }
 .section-ind-four ul {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 0px;
     padding: 0;
     margin-top: 0;
+    list-style: none;
 }
-.section-ind-four li {
+
+.section-ind-four li.card-item {
     max-width: 270px;
     background-color: var(--main-bg-color);
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
 }
 
 .text-img-cont{
-    padding: 30px;
+    padding: 30px 32px;
 }
 .icon-soc {
     width: 44px;
@@ -382,7 +393,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .icon-soc svg {
     width: 20px;
     height: 20px;
-    transition: fill 0.3s ease;
 }
 
 .icon-soc:hover {
@@ -394,17 +404,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .icon-soc-img{
     display: flex;
-    justify-content: center; 
-    gap: 10px;
+    justify-content: space-between;
+    gap: 0;
     margin-top: 16px;
     padding: 0;
+    list-style: none;
 }
+
 
 /*
         ТІНІ
 */
 
-.section-ind-four li {
+.section-ind-four li.card-item {
     max-width: 270px;
     background-color: var(--main-bg-color);
     border-radius: 4px;
@@ -455,9 +467,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .client-item:hover {
     color: var(--accent-color);
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 .client-item:hover .client-icon {
     color: var(--accent-color);
+    cursor: pointer;
 }
 
 /*footer*/
