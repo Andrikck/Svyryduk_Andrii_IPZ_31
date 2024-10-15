@@ -483,26 +483,41 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 28px;
-    display: block;
     display: flex;
+}
+
+.footer-contacts {
+    list-style: none;
 }
 
 .footer-des{
     padding-top: 60px;
     padding-bottom: 60px;
-    position: relative;
 }
-.footer-text-gray:last-child {
-    margin-bottom: 0;
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1600px;
 }
-.footer-social {
-    position: absolute;
-    top: 72px;
-    left: 516px;
+
+.footer-left, .footer-right {
     display: flex;
     flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 94px;
     align-items: flex-start;
 }
+
+.footer-contacts li{
+    margin-bottom: 12px;
+}
+
 .social-title {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
