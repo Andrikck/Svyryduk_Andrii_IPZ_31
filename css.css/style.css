@@ -51,6 +51,9 @@
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+
 }
 
 a:hover,
@@ -69,7 +72,8 @@ button:hover,
 button:focus,
 button:active{
     background-color: var(--accent-color);
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }   
 
 .btn-black{
@@ -97,23 +101,16 @@ button:active{
         color: var(--accent-color);
     }
 }
-.logo-footer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-bottom: 28px;
-    display: block;
 
-    span {
-        color: var(--accent-color);
-    }
-    span2 {
-        color: var(--main-bg-color);
-    }
+
+.logo-footer .logo-web {
+    color: var(--accent-color);
 }
+
+.logo-footer .logo-studio {
+    color: var(--main-bg-color);
+}
+
 
 
 /*body*/
@@ -201,11 +198,14 @@ footer a {
 	padding: 0px 15px;
 	max-width: 1200px;
   }
-
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .header .container {
 	height: 80px;
 	display: flex;
 	align-items: center;
+
 }
 
 .site-navigation__links {
@@ -235,6 +235,42 @@ nav {
 	margin: 0;
 }
 
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info svg {
+    display: block;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    transition: stroke 0.3s ease;
+}
+.icon-mail {
+    width: 16px;
+    height: 12px; 
+    transition: stroke 0.3s ease;
+}
+
+
+.btn-gray:hover .icon-phone {
+    fill: #2196F3;
+}
+
+.btn-gray:hover .icon-mail {
+    fill: #2196F3;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /*глобальне скидання стилів*/
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -246,12 +282,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /*індекс, секція 1*/
 .hero {
     background-color: var(--background-fill-color); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Img_hero.jpg');   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center; 
-    padding: 200px 0 200px 0;
+    padding: 200px 0;
+}
+@media (min-width: 1600px) {
+    .hero {
+        background-size: 1600px auto;
+    }
 }
 
 .hero h1 {
@@ -262,7 +307,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /*секція 2 index*/
 .section-ind-first{
-    padding: 94px;
+    padding: 94px 0;
 }
 .section-ind-first li:last-child {
     margin-right: 0;
@@ -279,6 +324,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
     justify-content: space-between;
     gap: 30px;
 }
+.icon {
+    width: 70px;
+    height: 70px;
+}
+.icon-wrapper {
+    background-color: var(--button-bg-color);
+    padding: 25px 100px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
 
 /*секція 3 index*/
 .section-ind-third{
@@ -291,35 +347,219 @@ h1, h2, h3, h4, h5, h6, p, ul {
     gap: 30px;
 }
 /*секція 4 index*/
-.section-ind-four{
+
+.section-ind-four {
     padding: 94px 0;
     background-color: var(--button-bg-color);
     text-align: center;
+
 }
 .section-ind-four ul {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 0px;
     padding: 0;
     margin-top: 0;
+    list-style: none;
 }
-.section-ind-four li {
+
+.section-ind-four li.card-item {
     max-width: 270px;
     background-color: var(--main-bg-color);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
 }
 
 .text-img-cont{
-    padding: 30px;
+    padding: 30px 32px;
+}
+.icon-soc {
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    border-radius: 50%;
+    background-color: var(--main-bg-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s ease, fill 0.3s ease;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+.icon-soc svg {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-soc:hover {
+    background-color: var(--accent-color);
+}
+.icon-soc:hover svg {
+    color: #FFFFFF;
+}
+
+.icon-soc-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*
+        ТІНІ
+*/
+
+.section-ind-four li.card-item {
+    max-width: 270px;
+    background-color: var(--main-bg-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+/*секція постійні клієети (5)*/
+.clients-section {
+    padding: 94px 0;
+}
+.clients-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+.client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    color: #AFB1B8;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+    transition: color 0.3s ease, fill 0.3s ease;
+    color: inherit
+}
+
+.client-item:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
+.client-item:hover .client-icon {
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
 /*footer*/
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 28px;
+    display: flex;
+}
+
+.footer-contacts {
+    list-style: none;
+}
+
 .footer-des{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-text-gray:last-child {
-    margin-bottom: 0;
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 94px;
+    align-items: baseline;
 }
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-contacts li{
+    margin-bottom: 12px;
+}
+
+.social-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: var(--main-bg-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+}
+
+.social-icons li svg {
+    color: #FFFFFF;
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease;
+}
+
 /*portfolio*/
 .section-port-first{
     padding-top: 94px;
@@ -357,4 +597,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+}
+
+.section-port-first ul:not(.ul-button) li {
+    width: calc(33.3333% - 30px); 
+    background-color: var(--main-bg-color);
+    border-radius: 1px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.section-port-first ul:not(.ul-button) li:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.section-port-first ul:not(.ul-button) img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
