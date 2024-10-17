@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio</title>
-        <link rel="stylesheet" href="path/to/modern-normalize.css">
+        <link rel="stylesheet" href="css.css\modern-normalize.css">
         <link rel="stylesheet" href="css.css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -50,7 +50,7 @@
         <section class="hero">
             <div class="container">
             <h1>Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type ="button">Замовити послугу</button>
+            <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
     
@@ -102,12 +102,27 @@
 
         <section class="section-ind-third">
             <div class="container">
-            <h2 class="h2-text">Чим ми займаємося</h2>
-            <ul class="image-list">
-                <li><img src="images/img1.jpg" width="370" height="294" alt="декстоп"></li>
-                <li><img src="images/img2.jpg" width="370" height="294" alt="мобільний"></li>
-                <li><img src="images/img3.jpg" width="370" height="294" alt="дизайн"></li>
-            </ul>
+                <h2 class="h2-text">Чим ми займаємося</h2>
+                <ul class="image-list">
+                    <li>
+                        <div class="image-overlay">
+                            <img src="images/img1.jpg" width="370" height="294" alt="декстоп">
+                            <div class="overlay-text">ДЕКСТОПНІ ДОДАТКИ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-overlay">
+                            <img src="images/img2.jpg" width="370" height="294" alt="мобільний">
+                            <div class="overlay-text">МОБІЛЬНІ ДОДАТКИ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-overlay">
+                            <img src="images/img3.jpg" width="370" height="294" alt="дизайн">
+                            <div class="overlay-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     
@@ -363,6 +378,23 @@
             </div>
         </div>
     </footer>
-    
+        
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" data-modal-close>&times;</button>
+            <h2>Форма заявки</h2>
+            <form>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
     </body>
 </html>
