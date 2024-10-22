@@ -815,7 +815,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* Стилі модального вікна */
 .modal {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 4px;
     transform: scale(0); /* Початковий масштаб */
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -850,4 +850,44 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .close-button:hover {
     color: var(--accent-color);
     background-color: transparent;
+}
+
+
+.modal-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--color-gray);
+    margin-bottom: 4px;
+}
+
+.input-icons{
+    width: 448px;
+    height: 40px;
+}
+
+.input-comentar{
+    width: 448px;
+    height: 120px;
+}
+
+.input-comentar::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1,16;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 12px 16px;
+    
 }
