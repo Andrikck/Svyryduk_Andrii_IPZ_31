@@ -46,6 +46,22 @@
         </div>
     </header>
     <main>
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-button" data-modal-close>&times;</button>
+                <h2>Форма заявки</h2>
+                <form>
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" required>
+    
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" required>
+    
+                    <button type="submit">Відправити</button>
+                </form>
+            </div>
+        </div>
 
         <section class="hero">
             <div class="container">
@@ -321,8 +337,6 @@
                 </ul>
             </div>
         </section>
-
-
     </main>
 
     <footer class="footer-des">
@@ -379,21 +393,7 @@
         </div>
     </footer>
         
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-button" data-modal-close>&times;</button>
-            <h2>Форма заявки</h2>
-            <form>
-                <label for="name">Ваше ім'я:</label>
-                <input type="text" id="name" required>
 
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" required>
-
-                <button type="submit">Відправити</button>
-            </form>
-        </div>
-    </div>
 
     <script src="js/modal.js"></script>
     </body>
