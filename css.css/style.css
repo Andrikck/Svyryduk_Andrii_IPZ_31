@@ -41,7 +41,7 @@
     letter-spacing: 0.06em;
 }
 
-.sec-button button{     
+.sec-button button{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -78,6 +78,16 @@ button:active{
     color: var(--main-bg-color);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }   
+
+
+a {
+    transition: color 0.25s ease;
+}
+
+a:hover {
+    color: #2196F3;
+}
+
 
 .btn-black{
     font-weight: 500;
