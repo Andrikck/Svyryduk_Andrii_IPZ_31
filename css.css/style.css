@@ -873,14 +873,28 @@ label{
 }
 
 .input-icons{
+    position: relative;
     width: 448px;
     height: 40px;
+}
+
+.input-icon {
+    left: 12px;
+}
+
+.input-icons {
+    width: 100%;
+    height: 100%;
+    padding-left: 42px;
+    box-sizing: border-box;
 }
 
 .input-comentar{
     width: 448px;
     height: 120px;
+    margin-bottom: 20px;
 }
+
 
 .input-comentar::placeholder {
     font-size: 12px;
@@ -891,3 +905,97 @@ label{
     padding: 12px 16px;
     
 }
+
+
+.checkbox-modal {
+    display: flex;
+    padding-left: 12px;
+    margin-bottom: 30px;
+  }
+  
+.checkbox-modal label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--color-gray);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.checkbox-modal input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border: 2px solid var(--text-color);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.checkbox-modal input:checked ~ .checkmark {
+    background-color: var(--accent-color);
+}
+  
+.checkbox-modal .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.checkbox-modal input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.checkbox-modal .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.checkbox-modal .btn-open-contract {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.submit-button{
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    color: var(--main-bg-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 52px;
+    border: none;
+    border-radius: 4px;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
