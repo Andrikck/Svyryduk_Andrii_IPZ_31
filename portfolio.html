@@ -248,17 +248,16 @@
                     <div class="footer-subscribe">
                         <p class="subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
     
-                        <div class="subscribe-form">
-    
-                            <input type="email" class="subscribe-input" placeholder="E-mail" required />
-    
+                        <form class="subscribe-form">
+                            <label class="visually-hidden" for="footer-subscribe-input">E-mail</label>
+                            <input type="email" class="subscribe-input" id="footer-subscribe-input" placeholder="E-mail" required />
                             <button class="subscribe-button">
                                 <span class="subscribe-button-text">Підписатися</span>
                                 <svg aria-hidden="true" width="24">
                                     <use xlink:href="images/modal.svg#icon-icon-send_telegram"></use>
                                 </svg>
                             </button>
-                        </div>
+                        </form>
                 </div>
             </div>
         </footer>
