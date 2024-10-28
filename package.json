@@ -1,0 +1,15 @@
+{
+  "name": "svyryduk_andrii_ipz_31",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass sass/main.scss css/main.min.css --style=compressed",
+    "watch-css": "sass --watch sass/main.scss:css/main.min.css --style=compressed"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
