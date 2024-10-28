@@ -256,24 +256,7 @@ section.hero h1 {
     margin-bottom: 10px;
 }
 
-/*footer*/
-footer {
-    background-color: var(--background-fill-color);
-    color:var(--text-color);
-}
-.footer-city{
-    color: var(--main-bg-color);
-    line-height: 1.1;
-    margin-bottom: 12px;
-}
-.footer-text-gray{
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-    margin-bottom: 12px;
-}
-footer a {
-    color: rgba(255, 255, 255, 0.6);
-}
+
 /*контейнери*/
 .container {
 	margin-left: auto;
@@ -589,6 +572,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /*footer*/
+
+footer {
+    background-color: var(--background-fill-color);
+    color:var(--text-color);
+}
+.footer-city{
+    color: var(--main-bg-color);
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+.footer-text-gray{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
