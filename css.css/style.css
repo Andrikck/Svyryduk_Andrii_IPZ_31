@@ -131,13 +131,7 @@ a:hover {
 }
 
 
-.logo-footer .logo-web {
-    color: var(--accent-color);
-}
 
-.logo-footer .logo-studio {
-    color: var(--main-bg-color);
-}
 /*
 ///////// Animation /////////
 */
@@ -632,6 +626,15 @@ footer a {
 .footer-contacts li{
     margin-bottom: 12px;
 }
+
+.logo-footer .logo-web {
+    color: var(--accent-color);
+}
+
+.logo-footer .logo-studio {
+    color: var(--main-bg-color);
+}
+
 
 .social-title {
     font-family: 'Roboto', sans-serif;
