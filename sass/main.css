@@ -772,6 +772,10 @@ footer a:hover {
   display: block;
   border-color: #ffffff;
 }
+.backdrop .modal .checkbox-modal label .btn-open-contract {
+  color: #2196f3;
+  text-decoration: underline;
+}
 .backdrop .modal .div-button {
   display: flex;
   justify-content: center;
