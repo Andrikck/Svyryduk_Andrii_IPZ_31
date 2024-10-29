@@ -169,14 +169,19 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
       
-        .btn-gray {
-    
-          &:hover {
-              .icon-phone, .icon-mail  {
-                  fill: $accent-color;
-              }
-          }
+        
       }
+
+      .btn-gray {
+        color: $color-gray;
+    
+        &:hover {
+          color: $accent-color;
+
+            .icon-phone, .icon-mail  {
+                fill: $accent-color;
+            }
+        }
     }
     
 

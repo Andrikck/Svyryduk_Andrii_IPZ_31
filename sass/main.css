@@ -192,7 +192,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
-.header .contact-info .btn-black .btn-gray:hover .icon-phone, .header .contact-info .btn-black .btn-gray:hover .icon-mail, .header .contact-info .btn-gray .btn-gray:hover .icon-phone, .header .contact-info .btn-gray .btn-gray:hover .icon-mail {
+.header .contact-info .btn-gray {
+  color: #757575;
+}
+.header .contact-info .btn-gray:hover {
+  color: #2196f3;
+}
+.header .contact-info .btn-gray:hover .icon-phone, .header .contact-info .btn-gray:hover .icon-mail {
   fill: #2196f3;
 }
 
