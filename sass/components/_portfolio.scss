@@ -1,0 +1,165 @@
+// portfolio.scss
+
+// Основний контейнер секції
+.section-port-first {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+  
+    // Кнопки фільтрації
+    .ul-button {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+  
+    // Список карток
+    ul:not(.ul-button) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  
+      li {
+        width: calc(33.3333% - 30px);
+        position: relative;
+        background-color: $main-bg-color;
+        border-radius: 1px;
+        overflow: hidden;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+        &:hover {
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+      }
+  
+      // Зображення в картках
+      img {
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+    }
+  }
+  
+  // Текстова частина під карткою
+  .text-container {
+    padding: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+  }
+  
+  // Стилі для тексту під карткою
+  .image-title, .image-description {
+    text-align: left;
+  }
+  
+  .image-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: $text-color;
+  }
+  
+  .image-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $color-gray;
+  }
+  
+  // Контейнер зображення з накладеним текстом
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  // Накладення тексту на зображення (Overlay)
+  .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    transition: bottom 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    opacity: 0;
+    overflow: hidden;
+  
+    .overlay-text2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.55;
+      letter-spacing: 0.03em;
+      text-transform: none;
+      padding: 63px 24px;
+      text-align: left;
+      max-height: 100%;
+      overflow: auto;
+    }
+  }
+  
+  // Ефекти для карток
+  .card {
+    position: relative;
+    list-style: none;
+  
+    &:hover .overlay {
+      bottom: 0;
+      opacity: 1;
+    }
+  
+    .overlay {
+      transition: bottom 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &:not(:hover) .overlay {
+      bottom: -100%;
+      opacity: 0;
+    }
+  }
+
+  // _portfolio.scss
+
+// Кнопка героїчного блоку
+.hero-button {
+    border: none;
+    border-radius: 4px;
+    color: $main-bg-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 24px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $accent-color;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+  }
+  
+  // Додаткова кнопка в портфоліо
+  .sec-button button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+  }
+  

@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio</title>
         <link rel="stylesheet" href="css.css\modern-normalize.css">
-        <link rel="stylesheet" href="css.css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sass/main.css">
+        <!-- <link rel="stylesheet" href="css.css/style.css"> -->
 
-        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">        
     </head>
     <body>
     <header class="header"> 
@@ -131,7 +131,7 @@
                     <li class="text-block">
                         <div class="icon-wrapper">
 
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon" aria-hidden="true" width="70" height="70">
                                 <use xlink:href="images/symbol-defs.svg#icon-Group_suputnyk"></use>
                             </svg>
                         </div>
@@ -141,7 +141,7 @@
 
                     <li class="text-block">
                         <div class="icon-wrapper">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon" aria-hidden="true" width="70" height="70">
                                 <use xlink:href="images/symbol-defs.svg#icon-clock-1_godinik"></use>
                             </svg>
                         </div>
@@ -151,7 +151,7 @@
 
                     <li class="text-block">
                         <div class="icon-wrapper">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon" aria-hidden="true" width="70" height="70">
                                 <use xlink:href="images/symbol-defs.svg#icon-diagram-1_pk"></use>
                             </svg>
                         </div>
@@ -160,7 +160,7 @@
 
                     <li class="text-block">
                         <div class="icon-wrapper">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon" aria-hidden="true" width="70" height="70">
                                 <use xlink:href="images/symbol-defs.svg#icon-astronaut-1_donat"></use>
                             </svg>
                         </div>
@@ -197,19 +197,28 @@
         </section>
     
         <section class="section-ind-four">
+            <!-- team -->
             <div class="container">
                 <h2 class="h2-text">Наша команда</h2>
+                <!-- h2-title l-title -->
                 <ul class="card-list">
+                    <!-- team-list -->
                     <li class="card-item">
+                        <!-- team-item || team-list-item -->
                         <img src="images/img.jpg" width="270" alt="Ігор Дем'яненко">
                         <div class="text-img-cont">
+                            <!-- team-content -->
                             <h3 class="h3-text">Ігор Дем'яненко</h3>
+                            <!-- m-title -->
                             <p class="p-text">Product Designer</p>
 
                             <ul class="icon-soc-img">
-
-                                <li><a href="https://www.instagram.com" class="icon-soc">
+                                <!-- socials -->
+                                <li>
+                                    <a href="https://www.instagram.com" class="icon-soc">
+                                        <!-- socials-link -->
                                     <svg aria-hidden="true">
+                                        <!-- socials icon -->
                                     <use xlink:href="images/soc.svg#soc-instagram-2_insta"></use>
                                 </svg>
                             </a>
