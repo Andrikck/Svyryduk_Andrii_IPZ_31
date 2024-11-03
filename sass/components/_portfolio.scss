@@ -162,4 +162,17 @@
     border-radius: 4px;
     padding: 6px 22px;
   }
+
+  // адаптив
+  @media (max-width: 768px) {
+    ul:not(.ul-button) {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+    
+    li {
+        width: calc(50% - 15px); 
+    }
+}
   

@@ -22,6 +22,18 @@ body {
   padding: 0px 15px;
   max-width: 1200px;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 15px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -276,11 +288,12 @@ footer a:hover {
   display: flex;
   justify-content: flex-start;
   gap: 94px;
-  align-items: baseline;
+  justify-content: space-between;
 }
 .footer-container .footer-left, .footer-container .footer-right {
   display: flex;
   flex-direction: column;
+  max-width: 50%;
 }
 .footer-container .footer-contacts {
   list-style: none;
@@ -386,6 +399,47 @@ footer a:hover {
   height: 24px;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+  .header nav {
+    margin-left: 88px;
+  }
+  .header .contact-info ul {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-footer {
+    font-size: 24px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left {
+    order: 1;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-right {
+    order: 2;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-subscribe {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .hero {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Img_hero.jpg");
@@ -935,4 +989,15 @@ footer a:hover {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
+}
+
+@media (max-width: 768px) {
+  ul:not(.ul-button) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  li {
+    width: calc(50% - 15px);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -247,11 +247,13 @@ footer a {
     display: flex;
     justify-content: flex-start;
     gap: 94px;
-    align-items: baseline;
+    justify-content: space-between;
+
 
     .footer-left, .footer-right {
         display: flex;
         flex-direction: column;
+        max-width: 50%;
     }
 
     .footer-contacts {
@@ -306,6 +308,7 @@ footer a {
 
 .footer-subscribe {
     flex-grow: 1;
+    
 
     .subscribe-title {
         font-size: 14px;
@@ -366,7 +369,61 @@ footer a {
         }
     }
 }
+// адаптив шапка
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+  
+  .header{
+    nav{
+      margin-left: 88px;
+    }
+
+    .contact-info {
+      ul {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px; 
+  
+      }
+  }
+
+  }
+}
 
   
+// адаптив футер
+@media (max-width: 768px) {
+    .logo-footer{
+      font-size: 24px;
+    }
 
-  
+    .footer-container {
+      flex-direction: column; // Усе в стовпчик
+      align-items: center; // Центруємо всі елементи
+  }
+
+  .footer-left {
+      order: 1; // Перший елемент зліва
+      max-width: 100%; // Знімаємо обмеження ширини
+      margin-bottom: 20px; // Відстань між блоками
+  }
+
+  .footer-right {
+      order: 2; // Другий елемент справа
+      max-width: 100%; // Знімаємо обмеження ширини
+      margin-bottom: 20px; // Відстань між блоками
+  }
+
+  .footer-subscribe {
+      order: 3; // Третій елемент по центру
+      width: 100%; // Залишаємо всю ширину
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Центруємо вміст
+  }
+}
