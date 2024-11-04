@@ -371,59 +371,92 @@ footer a {
 }
 // адаптив шапка
 
-@media (max-width: 768px) {
+@media (width <= 1200px) {
   .logo {
     font-size: 24px;
   }
-  
-  .header{
-    nav{
-      margin-left: 88px;
-    }
 
-    .contact-info {
-      ul {
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 12px; 
-  
-      }
+  nav {
+    margin-left: 88px;
   }
 
+  .header{
+    .contact-info {
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }  
   }
 }
 
+
   
 // адаптив футер
-@media (max-width: 768px) {
-    .logo-footer{
-      font-size: 24px;
-    }
-
-    .footer-container {
-      flex-direction: column; // Усе в стовпчик
-      align-items: center; // Центруємо всі елементи
+@media (width <= 1200px) {
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 
-  .footer-left {
-      order: 1; // Перший елемент зліва
-      max-width: 100%; // Знімаємо обмеження ширини
-      margin-bottom: 20px; // Відстань між блоками
-  }
-
-  .footer-right {
-      order: 2; // Другий елемент справа
-      max-width: 100%; // Знімаємо обмеження ширини
-      margin-bottom: 20px; // Відстань між блоками
+  .footer-left, .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
   }
 
   .footer-subscribe {
-      order: 3; // Третій елемент по центру
-      width: 100%; // Залишаємо всю ширину
+    text-align: center;
+  }
+}
+
+@media (width <= 768px) {
+    .footer-container{
       display: flex;
       flex-direction: column;
-      align-items: center; // Центруємо вміст
+      text-align: center;
+      align-items: center;
+      gap: 0;
+    }
+    .footer-container{
+      .footer-left,.footer-right{
+        text-align: center;
+        padding-bottom: 60px;
+        justify-content: center;
+        .social-icons{
+          justify-content: center;
+        }
+        .logo-footer{
+          justify-content: center;
+        }
+        .subscribe-title{
+          text-align: center;
+        }
+
+    }
+    .footer-subscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .subscribe-input {
+        flex-grow: 1;
+      } 
+
+      .subscribe-button {
+        width: 100%; 
+        justify-content: center;
+      }
+    }
   }
 }
