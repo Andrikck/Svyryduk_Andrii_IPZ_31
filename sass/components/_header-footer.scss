@@ -397,9 +397,13 @@ footer a {
 @media (width <= 1200px) {
   
   .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     text-align: center;
+    gap: 0;
+    flex-wrap: wrap;
   }
 
   .footer-left, .footer-right {
@@ -409,10 +413,33 @@ footer a {
     text-align: left;
   }
 
+  .footer-left {
+    align-self: flex-start;
+  }
+
+  .footer-right {
+    align-self: flex-end;
+  }
+
+
   .footer-subscribe {
+    width: 100%;
     text-align: center;
+    margin-top: 60px;
+    box-sizing: border-box;
+
+  .subscribe-form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
+}
+
+
+
+
 
 @media (width <= 768px) {
     .footer-container{
