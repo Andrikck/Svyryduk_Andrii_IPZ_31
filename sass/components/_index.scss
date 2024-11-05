@@ -242,11 +242,12 @@
         background-color: $main-bg-color;
         padding: 40px;
         border-radius: 4px;
-        transform: scale(0); // Початковий масштаб
+        transform: scale(0);
         transition: transform 0.3s ease, opacity 0.3s ease;
-        height: 581px;
-        width: 528px;
+        max-height: 90%;
+        max-width: 90%;
         z-index: 1;
+        overflow-y: auto;
 
         &:not(.is-hidden) {
             transform: scale(1);
@@ -517,6 +518,92 @@
             .icon-wrapper {
                 background-color: $button-bg-color;
                 padding: 25px 190px;
+            }
+        }
+    }
+}
+
+// адаптив секція нон
+
+@media (width <= 1200px) {
+    .section-ind-third {
+        display: none;
+    }
+}
+
+//наша команда адаптив
+
+@media (width <= 1200px){
+    .section-ind-four ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .section-ind-four li.card-item {
+        flex: 1 1 354px; 
+        max-width: 354px; 
+    }
+}
+
+
+// 
+@media (width <= 768px) {
+    .section-ind-four ul {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px;
+    }
+
+    .section-ind-four li.card-item {
+        flex: 1 1 450px; 
+        max-width: 100%; 
+    }
+
+    .section-ind-four .icon-soc-img {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+}
+
+//постійні клієнти
+
+@media (width <= 1200px) {
+    .clients-section{
+        padding: 60px 0;
+
+        .clients-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+    
+            .client-item {
+                
+                padding: 16px 60px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (width <= 768px){
+    .clients-section{
+        padding: 60px 0;
+
+        .clients-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            justify-items: center;
+    
+            .client-item {
+                
+                padding: 16px 52px;
             }
         }
     }
