@@ -410,7 +410,9 @@ footer a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+
   }
 
   .footer-left {
@@ -427,6 +429,7 @@ footer a {
     text-align: center;
     margin-top: 60px;
     box-sizing: border-box;
+    
 
   .subscribe-form {
     
