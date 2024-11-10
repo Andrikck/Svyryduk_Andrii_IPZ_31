@@ -24,6 +24,18 @@
     }
 }
 
+// адаптив херо
+
+@media (width < 1200px){
+    .hero{
+        padding: 118px 0;
+
+        h1{
+            font-size: 26px;
+        }
+    }
+}
+
 .section-ind-first {
     padding: 94px 0;
 
@@ -463,22 +475,27 @@
     }
 }
 
-
-// адаптив херо
-
-@media (width <= 1200px){
-    .hero{
-        padding: 118px 0;
-
-        h1{
-            font-size: 26px;
-        }
+@media (width < 768px) {
+    .backdrop .modal {
+      padding: 20px;
+      max-width: 90%; 
+  
+      .input-comentar {
+        width: 100%;
+        height: auto;
+        min-height: 100px; 
+        padding: 10px;
+      }
     }
-}
+  }
+  
+
+
+
 
 // адаптив секція 1
 
-@media (width <= 1200px){
+@media (width < 1200px){
     .section-ind-first {
         padding: 60px 0;
 
@@ -500,7 +517,7 @@
     }
 }
 
-@media (width <=768px){
+@media (width <768px){
     .section-ind-first {
         padding: 60px 0;
 
@@ -525,7 +542,7 @@
 
 // адаптив секція нон
 
-@media (width <= 1200px) {
+@media (width < 1200px) {
     .section-ind-third {
         display: none;
     }
@@ -533,43 +550,49 @@
 
 //наша команда адаптив
 
-@media (width <= 1200px){
+@media (width < 1200px){
     .section-ind-four ul {
         flex-wrap: wrap;
-        justify-content: space-between;
         gap: 30px;
     }
 
     .section-ind-four li.card-item {
         flex: 1 1 354px; 
         max-width: 354px; 
+
+        .icon-soc-img{
+            justify-content: center;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        
     }
 }
 
 
 // 
-@media (width <= 768px) {
+@media (width < 768px) {
     .section-ind-four ul {
-        flex-direction: column; 
         align-items: center; 
         gap: 30px;
     }
 
     .section-ind-four li.card-item {
         flex: 1 1 450px; 
-        max-width: 100%; 
-    }
+        max-width: 450px; 
 
-    .section-ind-four .icon-soc-img {
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 10px; 
+        img{
+            width: 100%;
+        }
     }
 }
 
 //постійні клієнти
 
-@media (width <= 1200px) {
+@media (width < 1200px) {
     .clients-section{
         padding: 60px 0;
 
@@ -591,7 +614,7 @@
 
 
 
-@media (width <= 768px){
+@media (width < 768px){
     .clients-section{
         padding: 60px 0;
 

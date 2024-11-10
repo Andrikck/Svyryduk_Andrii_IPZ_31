@@ -8,370 +8,369 @@
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
+}
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    color: $text-color;
-  
-    span {
-      color: $accent-color;
-    }
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $text-color;
+
+  span {
+    color: $accent-color;
   }
-  
-  // Логотип у футері
-  .logo-footer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    color: $text-color;
-    margin-bottom: 28px;
+}
+
+// Логотип у футері
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $text-color;
+  margin-bottom: 28px;
+  display: flex;
+
+  .logo-web {
+    color: $accent-color;
+  }
+
+  .logo-studio {
+    color: $main-bg-color;
+  }
+}
+
+// Стилі для хедера
+.header {
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    height: 80px;
     display: flex;
-  
-    .logo-web {
-      color: $accent-color;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    margin-left: 96px;
+  }
+
+  // Навігаційне меню
+  .site-navigation__links {
+    display: flex;
+    gap: 50px;
+
+    li {
+      display: inline;
     }
-    
-    .logo-studio {
-      color: $main-bg-color;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    // Анімація для навігації на першій сторінці
+    a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      top: 46px;
+      left: 0;
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scaleX(0);
+    }
+
+    a:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    a.active {
+      color: $accent-color;
+
+      &::after {
+        opacity: 1;
+        transform: scaleX(1);
+        transition: none;
+      }
+    }
+
+    // Анімація для другої сторінки (портфоліо)
+    a.portfolio-link::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: $background-fill-color;
+      top: 46px;
+      left: 0;
+      border-radius: 2px;
+      opacity: 0;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scaleX(0);
+    }
+
+    a.portfolio-link:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
     }
   }
-  
-  // Стилі для хедера
-  .header {
-    border-bottom: 1px solid #ECECEC;
-    
-    .container {
-      height: 80px;
+
+  // Контактна інформація в хедері
+  .contact-info {
+    margin-left: auto;
+    a {
       display: flex;
       align-items: center;
+      gap: 10px;
     }
-    nav {
-      margin-left: 96px;
-  }
-  
-  
-    // Навігаційне меню
-    .site-navigation__links {
+
+    ul {
       display: flex;
-      gap: 50px;
+      list-style: none;
+      gap: 40px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-      
-  
-      li {
-        display: inline;
-      }
-  
-      a {
-        position: relative;
-        text-decoration: none;
-        font-weight: 500;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-        &:hover, &:focus {
-          color: $accent-color;
-        }
-      }
-  
-      // Анімація для навігації на першій сторінці
-      a::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: $accent-color;
-        top: 46px; 
-        left: 0;
-        border-radius: 2px;
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transform: scaleX(0); 
-      }
-  
-      a:hover::after {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-  
-      a.active {
+    .icon-phone,
+    .icon-mail {
+      width: 16px;
+      height: 16px;
+      transition: stroke 0.3s ease;
+    }
+
+    .btn-black,
+    .btn-gray {
+      font-weight: 500;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-gray {
+      color: $color-gray;
+
+      &:hover {
         color: $accent-color;
-  
-        &::after {
-          opacity: 1;
-          transform: scaleX(1);
-          transition: none;
+
+        .icon-phone,
+        .icon-mail {
+          fill: $accent-color;
         }
       }
-  
-      // Анімація для другої сторінки (портфоліо)
-      a.portfolio-link::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: $background-fill-color;
-        top: 46px;
-        left: 0;
-        border-radius: 2px;
-        opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transform: scaleX(0); 
-      }
-  
-      a.portfolio-link:hover::after {
-        opacity: 1;
-        transform: scaleX(1);
-      }
     }
-  
-    // Контактна інформація в хедері
-    .contact-info {
-      margin-left: auto;
-        a{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        }
-      
-      ul{
-        display: flex;
-        list-style: none; 
-        gap: 40px;
-      }
-      li {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-  
-      .icon-phone, .icon-mail {
-        width: 16px;
-        height: 16px;
-        transition: stroke 0.3s ease;
-      }
-      
-  
-      .btn-black, .btn-gray {
-        font-weight: 500;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-      
-        
-      }
 
-      .btn-gray {
-        color: $color-gray;
-    
-        &:hover {
-          color: $accent-color;
-
-            .icon-phone, .icon-mail  {
-                fill: $accent-color;
-            }
-        }
-    }
-    
-
-    }
+    // burger menu
   }
+}
 
-  
-  // Стилі для футера
-  .footer-des {
-    background-color: $background-fill-color;
-    color: $text-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+// Стилі для футера
+.footer-des {
+  background-color: $background-fill-color;
+  color: $text-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0px 15px;
-      max-width: 1200px;
-    }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+    max-width: 1200px;
+  }
 }
 
 .footer-city {
-    color: $main-bg-color;
-    line-height: 1.1;
-    margin-bottom: 12px;
+  color: $main-bg-color;
+  line-height: 1.1;
+  margin-bottom: 12px;
 }
 
 .footer-text-gray {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.1;
-    margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.1;
+  margin-bottom: 12px;
 }
 
 footer a {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 
-    &:hover {
-        color: $accent-color;
-    }
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .logo-footer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    color: $text-color;
-    margin-bottom: 28px;
-    display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: $text-color;
+  margin-bottom: 28px;
+  display: flex;
 
-    .logo-web {
-        color: $accent-color;
-    }
+  .logo-web {
+    color: $accent-color;
+  }
 
-    .logo-studio {
-        color: $main-bg-color;
-    }
+  .logo-studio {
+    color: $main-bg-color;
+  }
 }
 
 .footer-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 94px;
+  justify-content: space-between;
+
+  .footer-left,
+  .footer-right {
     display: flex;
-    justify-content: flex-start;
-    gap: 94px;
-    justify-content: space-between;
+    flex-direction: column;
+    max-width: 50%;
+  }
 
+  .footer-contacts {
+    list-style: none;
+    padding: 0;
 
-    .footer-left, .footer-right {
-        display: flex;
-        flex-direction: column;
-        max-width: 50%;
+    li {
+      margin-bottom: 12px;
     }
-
-    .footer-contacts {
-        list-style: none;
-        padding: 0;
-
-        li {
-            margin-bottom: 12px;
-        }
-    }
+  }
 }
 
 .social-title {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: $main-bg-color;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #ffffff;
+      transition: fill 0.3s ease;
+    }
+  }
+}
+
+.footer-subscribe {
+  flex-grow: 1;
+
+  .subscribe-title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: left;
     margin-bottom: 20px;
     color: $main-bg-color;
-}
+  }
 
-.social-icons {
+  .subscribe-form {
     display: flex;
+    align-items: center;
     gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 
-    a {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .subscribe-input {
+      height: 50px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      outline: none;
+      padding-left: 15px;
+      color: rgba(255, 255, 255, 0.6);
+      background-color: $background-fill-color;
+      flex-grow: 1;
 
-        &:hover {
-            background-color: $accent-color;
-        }
-
-        svg {
-            width: 20px;
-            height: 20px;
-            color: #FFFFFF;
-            transition: fill 0.3s ease;
-        }
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
-}
 
-.footer-subscribe {
-    flex-grow: 1;
-    
+    .subscribe-button {
+      background-color: $accent-color;
+      border: none;
+      cursor: pointer;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      padding: 10px 28px;
 
-    .subscribe-title {
-        font-size: 14px;
+      .subscribe-button-text {
+        font-size: 16px;
         font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-align: left;
-        margin-bottom: 20px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        text-align: center;
         color: $main-bg-color;
+        margin-right: 10px;
+      }
+
+      svg {
+        fill: white;
+        width: 24px;
+        height: 24px;
+      }
     }
-
-    .subscribe-form {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        .subscribe-input {
-            height: 50px;
-            border-radius: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            outline: none;
-            padding-left: 15px;
-            color: rgba(255, 255, 255, 0.6);
-            background-color: $background-fill-color;
-            flex-grow: 1;
-
-            &::placeholder {
-                color: rgba(255, 255, 255, 0.6);
-            }
-        }
-
-        .subscribe-button {
-            background-color: $accent-color;
-            border: none;
-            cursor: pointer;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-            padding: 10px 28px;
-
-            .subscribe-button-text {
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 1.87;
-                letter-spacing: 0.06em;
-                text-align: center;
-                color: $main-bg-color;
-                margin-right: 10px;
-            }
-
-            svg {
-                fill: white;
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
+  }
 }
 // адаптив шапка
 
-@media (width <= 1200px) {
+@media (width < 1200px) {
   .logo {
     font-size: 24px;
   }
@@ -380,93 +379,83 @@ footer a {
     margin-left: 88px;
   }
 
-  .header{
+  .header {
     .contact-info {
       ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
       }
-    }  
+    }
   }
 }
 
-
-  
 // адаптив футер
-@media (width <= 1200px) {
-  
+@media (width < 1200px) {
   .footer-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
-    align-items: center;
+    // align-items: center;
     text-align: center;
     gap: 0;
     flex-wrap: wrap;
   }
 
-  .footer-left, .footer-right {
-    width: 100%;
+  .footer-left,
+  .footer-right {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     text-align: center;
     align-items: center;
-
   }
-
-  .footer-left {
-    align-self: flex-start;
-  }
-
-  .footer-right {
-    align-self: flex-end;
-  }
-
 
   .footer-subscribe {
     width: 100%;
     text-align: center;
     margin-top: 60px;
     box-sizing: border-box;
-    
 
-  .subscribe-form {
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-}
+    .subscribe-title {
+      text-align: center;
+    }
 
-
-
-
-
-@media (width <= 768px) {
-    .footer-container{
+    .subscribe-form {
       display: flex;
       flex-direction: column;
-      text-align: center;
-      align-items: center;
-      gap: 0;
-    }
-    .footer-container{
-      .footer-left,.footer-right{
-        text-align: center;
-        padding-bottom: 60px;
-        justify-content: center;
-        .social-icons{
-          justify-content: center;
-        }
-        .logo-footer{
-          justify-content: center;
-        }
-        .subscribe-title{
-          text-align: center;
-        }
+      gap: 10px;
 
+      .subscribe-input {
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+  }
+  .footer-container {
+    .footer-left,
+    .footer-right {
+      text-align: center;
+      padding-bottom: 60px;
+      justify-content: center;
+      .social-icons {
+        justify-content: center;
+      }
+      .logo-footer {
+        justify-content: center;
+      }
+      .subscribe-title {
+        text-align: center;
+      }
     }
     .footer-subscribe {
       display: flex;
@@ -475,18 +464,154 @@ footer a {
       text-align: center;
     }
     .subscribe-form {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       .subscribe-input {
         flex-grow: 1;
-      } 
-
-      .subscribe-button {
-        width: 100%; 
-        justify-content: center;
       }
+    }
+  }
+}
+
+@media (width <= 480px) {
+  .header {
+    nav{
+      margin-left: 0;
+    }
+    .container{
+      align-items: center;
+    }
+
+
+    .site-navigation__links,
+    .contact-info {
+      display: none;
+    }
+  }
+}
+
+
+
+// burger
+
+@media (width > 480px) {
+  .burger__button {
+    display: none;
+  }
+}
+// .mobile-menu__list{
+//   margin-top: 48px;
+
+  
+// }
+.mobile-menu {
+  .mobile-menu__page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 48px;
+    padding-left: 25px;
+    align-items: flex-start;
+
+    a {
+      font-size: 40px;
+      text-decoration: none;
+      color: #212121;
+      font-weight: 700;
+
+      &.active {
+        color: #000;
+      }
+    }
+  }
+
+  .mobile-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 18px;
+      color: #555;
+    }
+  }
+}
+
+.mobile-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+
+  a {
+    font-size: 18px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+
+.burger__button {
+  background: none;
+
+  svg {
+    fill: #212121;
+  }
+}
+
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(101%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1000;
+
+  &.is-active {
+    transform: translateX(0);
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: $text-color;
     }
   }
 }
