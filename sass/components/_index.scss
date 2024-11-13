@@ -24,6 +24,18 @@
     }
 }
 
+// адаптив херо
+
+@media (width < 1200px){
+    .hero{
+        padding: 118px 0;
+
+        h1{
+            font-size: 26px;
+        }
+    }
+}
+
 .section-ind-first {
     padding: 94px 0;
 
@@ -242,11 +254,12 @@
         background-color: $main-bg-color;
         padding: 40px;
         border-radius: 4px;
-        transform: scale(0); // Початковий масштаб
+        transform: scale(0);
         transition: transform 0.3s ease, opacity 0.3s ease;
-        height: 581px;
-        width: 528px;
+        max-height: 90%;
+        max-width: 90%;
         z-index: 1;
+        overflow-y: auto;
 
         &:not(.is-hidden) {
             transform: scale(1);
@@ -428,7 +441,13 @@
                         border-color: $main-bg-color;
                     }
                 }
+
+                .btn-open-contract {
+                color: $accent-color;
+                text-decoration: underline;
             }
+            }
+            
         }
         
 
@@ -451,6 +470,163 @@
                 padding: 10px 52px;
                 border: none;
                 border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media (width < 768px) {
+    .backdrop .modal {
+      padding: 20px;
+      max-width: 90%; 
+  
+      .input-comentar {
+        width: 100%;
+        height: auto;
+        min-height: 100px; 
+        padding: 10px;
+      }
+    }
+  }
+  
+
+
+
+
+// адаптив секція 1
+
+@media (width < 1200px){
+    .section-ind-first {
+        padding: 60px 0;
+
+        .text-block-container {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .text-block {
+            flex-basis: calc(50% - 15px);
+            margin-bottom: 30px;
+            max-width: 100%;
+            
+            .icon-wrapper {
+                background-color: $button-bg-color;
+                padding: 25px 142px;
+            }
+        }
+    }
+}
+
+@media (width <768px){
+    .section-ind-first {
+        padding: 60px 0;
+
+        .text-block-container {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .text-block {
+            text-align: center;
+            justify-content: center;
+            flex-basis: calc(100%);
+            margin-bottom: 30px;
+            
+            .icon-wrapper {
+                background-color: $button-bg-color;
+                padding: 25px 190px;
+            }
+        }
+    }
+}
+
+// адаптив секція нон
+
+@media (width < 1200px) {
+    .section-ind-third {
+        display: none;
+    }
+}
+
+//наша команда адаптив
+
+@media (width < 1200px){
+    .section-ind-four ul {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .section-ind-four li.card-item {
+        flex: 1 1 354px; 
+        max-width: 354px; 
+
+        .icon-soc-img{
+            justify-content: center;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        
+    }
+}
+
+
+// 
+@media (width < 768px) {
+    .section-ind-four ul {
+        align-items: center; 
+        gap: 30px;
+    }
+
+    .section-ind-four li.card-item {
+        flex: 1 1 450px; 
+        max-width: 450px; 
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+//постійні клієнти
+
+@media (width < 1200px) {
+    .clients-section{
+        padding: 60px 0;
+
+        .clients-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+    
+            .client-item {
+                
+                padding: 16px 60px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (width < 768px){
+    .clients-section{
+        padding: 60px 0;
+
+        .clients-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            justify-items: center;
+    
+            .client-item {
+                
+                padding: 16px 52px;
             }
         }
     }
